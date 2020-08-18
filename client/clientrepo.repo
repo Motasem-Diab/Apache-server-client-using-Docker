@@ -1,0 +1,10 @@
+[clientRepo]
+
+name=Server Repo
+
+baseurl=http://172.17.0.2:8899/serverepo.repo
+
+enabled=1
+
+gpgcheck=0
+
