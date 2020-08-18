@@ -1,0 +1,10 @@
+[serverRepo]
+
+name=try it
+
+baseurl=file:///serverRepo
+
+enabled=1
+
+gpgcheck=0
+
