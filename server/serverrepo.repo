@@ -2,7 +2,7 @@
 
 name=try it
 
-baseurl=file:///serverRepo
+baseurl=file:///serverRepo/
 
 enabled=1
 

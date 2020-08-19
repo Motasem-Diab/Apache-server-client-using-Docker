@@ -1,8 +1,8 @@
 [clientRepo]
 
-name=Server Repo
+name=C-R-ServerURL
 
-baseurl=http://172.17.0.2:8899/serverepo.repo
+baseurl=http://172.17.0.2:80
 
 enabled=1
 
