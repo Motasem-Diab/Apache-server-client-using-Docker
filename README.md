@@ -7,7 +7,14 @@ This task aimed to:
 
 
 
-
+to make this works:
+. clone my project
+. enter to server directory ($ cd /task3/server)
+. execute (runSever) script by ($./runServer): this will stop the previous server container if exists then build and run the server image.
+. execute (runClient) script by ($./runClient): this will build the client image.
+. execute the command ($ docker run -it client-image).
+. after that you will be inside the client container, you can run($ yum install httpd) to install it or you can remove it by ($yum remove httpd).
+. you can use the script (validate) to check if (httpd) is installed on the client or not by execute the script by (./validate).
 
 
 Note: run the command ($ sysctln net.ipv4.ip_forward) if it's equal 0 then you have to do the following:
