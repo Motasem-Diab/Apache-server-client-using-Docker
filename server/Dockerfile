@@ -1,12 +1,7 @@
 FROM centos:7
 
-
 RUN yum install httpd createrepo -y
 RUN mkdir /serverRepo/
-#RUN yum install yum-util
-#RUN yum install yum-plugin-downloadonly
-#RUN yum install --downloadonly --downloaddir=/serverRepo httpd 
-#RUN yumdownloader --resolve --destdir=serverRepo httpd
 
 RUN repotrack -p /serverRepo/ httpd
 
@@ -15,11 +10,7 @@ COPY serverrepo.repo /etc/yum.repos.d/
 RUN createrepo /serverRepo/
 
 COPY httpd.conf /etc/httpd/conf/httpd.conf
-
-#COPY /var/www/html/serverRepo/repodata /repodata
-
-
-EXPOSE 80
+EXPOSE 8899
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
